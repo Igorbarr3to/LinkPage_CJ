@@ -37,7 +37,7 @@ img {
 
 .container {
   height: 100%;
-  margin: 7%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,10 +47,11 @@ img {
 }
 
 
-.link-box{
+.link-card{
   text-align: center;
   width: 25rem;
   height: 40rem;
+  margin: auto 0;
   border: 1px solid white;
   border-radius: 10px;
   background: #e0a1632a;
@@ -110,11 +111,9 @@ footer a.btn-footer {
 }
 
 @media (min-width:769px){  
-  .container {
-    margin: 3%;
-  }
 
-  .link-box{
+
+  .link-card{
     width: 35em;
     height: 45rem;
     font-size: large;
@@ -134,7 +133,7 @@ footer a.btn-footer {
   }
 }
 
-@media(max-width: 320px){
+@media(min-width: 320px) and (max-width: 424px){
 
   .container{
     margin: 7%;
@@ -144,7 +143,7 @@ footer a.btn-footer {
     width: 200px;
   }
 
-  .link-box{
+  .link-card{
     width: 20em;
     height: 40rem;
   }
