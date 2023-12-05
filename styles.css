@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100vh;
-  font-size: 14px;
-  font-weight: bold;
-}
-
 body {
   background-image: url(./img/background.jpg);
   background-repeat: no-repeat;
@@ -31,13 +25,10 @@ img {
   width: 300px;
   margin-top: 10px;
   border-radius: 10px;
-  
 }
 
-
 .container {
-  height: 100%;
-  margin: 0 auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,12 +37,10 @@ img {
   color: #FFF;
 }
 
-
 .link-card{
   text-align: center;
   width: 25rem;
   height: 40rem;
-  margin: auto 0;
   border: 1px solid white;
   border-radius: 10px;
   background: #e0a1632a;
@@ -111,11 +100,8 @@ footer a.btn-footer {
 }
 
 @media (min-width:769px){  
-
-
   .link-card{
-    width: 35em;
-    height: 45rem;
+    width: 600px;
     font-size: large;
   }
 
@@ -123,42 +109,62 @@ footer a.btn-footer {
     width: 80px;
     height: 80px;
     line-height: 80px;
-    margin: 0px 20px;
+    margin: 0px 80px;
   }
 }
 
 @media(min-width:425px) and (max-width: 768px){
-  .container{
-    margin: 3%;
+  section.btn-links {
+    margin-top: 30px;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  a.link button {
+    padding: 15px;
+    font-size: 25px;
+  }
+
+  footer {
+    text-align: center;
+    margin: 0px 30px;
+    font-size: 13px;
+  }
+
+  footer a.btn-footer{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    margin: 40px 45px;
   }
 }
 
 @media(min-width: 320px) and (max-width: 424px){
-
-  .container{
-    margin: 7%;
-  }
-
   img {
     width: 200px;
   }
 
   .link-card{
-    width: 20em;
-    height: 40rem;
+    width: 280px;
+    height: 400px;
   }
 
+  section.btn-links {
+    gap: 10px;
+    padding: 10px;
+  }
+  
   footer {
     text-align: center;
-    margin: 0px 10px;
-    margin-bottom: 20px;
+    margin: 0px 20px;
+    font-size: 13px;
   }
 
   footer a.btn-footer{
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    margin: 30px 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 5px 25px;
   }
 }
 
