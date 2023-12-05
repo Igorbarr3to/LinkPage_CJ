@@ -29,6 +29,7 @@ img {
 
 .container {
   height: 100vh;
+  margin: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,6 +115,11 @@ footer a.btn-footer {
 }
 
 @media(min-width:425px) and (max-width: 768px){
+
+  .container {
+    height: 100%;
+    margin: 5%;
+  }
   section.btn-links {
     margin-top: 30px;
     gap: 20px;
@@ -140,13 +146,19 @@ footer a.btn-footer {
 }
 
 @media(min-width: 320px) and (max-width: 424px){
+
+  .container{
+    height: 100%;
+    margin: 25%;
+  }
+
   img {
     width: 200px;
   }
 
   .link-card{
     width: 280px;
-    height: 400px;
+    height: 450px;
   }
 
   section.btn-links {
