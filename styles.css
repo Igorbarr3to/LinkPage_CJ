@@ -29,7 +29,7 @@ img {
 
 .container {
   height: 100vh;
-  margin: 200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,6 +47,7 @@ img {
   background: #e0a1632a;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 section.btn-links {
@@ -120,6 +121,12 @@ footer a.btn-footer {
     height: 100%;
     margin: 5%;
   }
+
+  .link-card{
+    margin-top: 30px ;
+    height: 650px;
+  }
+
   section.btn-links {
     margin-top: 30px;
     gap: 20px;
@@ -133,7 +140,7 @@ footer a.btn-footer {
 
   footer {
     text-align: center;
-    margin: 0px 30px;
+    margin: 10px 30px;
     font-size: 13px;
   }
 
@@ -145,7 +152,7 @@ footer a.btn-footer {
   }
 }
 
-@media(min-width: 320px) and (max-width: 424px){
+@media(max-width: 424px){
 
   .container{
     height: 100%;
@@ -158,7 +165,7 @@ footer a.btn-footer {
 
   .link-card{
     width: 280px;
-    height: 450px;
+    height: 500px;
   }
 
   section.btn-links {
@@ -168,7 +175,7 @@ footer a.btn-footer {
   
   footer {
     text-align: center;
-    margin: 0px 20px;
+    margin: 30px 20px;
     font-size: 13px;
   }
 
